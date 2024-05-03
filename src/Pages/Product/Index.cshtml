@@ -1,0 +1,13 @@
+﻿@page
+@using ContosoCrafts.WebSite.Components
+@model ContosoCrafts.WebSite.Pages.Product.IndexModel
+@{
+    ViewData["Title"] = "Index page";
+}
+
+
+<a href="./Product/Create" class="btn btn-light">Create</a>
+
+@(await Html.RenderComponentAsync<ProductIndex>(RenderMode.ServerPrerendered))
+
+<script src="_framework/blazor.service.js"></script>

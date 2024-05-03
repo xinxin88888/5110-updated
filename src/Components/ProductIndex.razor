@@ -1,0 +1,40 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@using ContosoCrafts.WebSite.Models
+@using ContosoCrafts.WebSite.Services
+@inject JsonFileProductService ProductService
+
+<!--Create a table listing all items in the database-->
+<div class="container">
+    <table class="table table-bordered table-striped" style="background-color: #E1E9E8">
+        <thead>
+            <tr>
+                <!--Setting column name as Planet-->
+                <th> Products </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in ProductService.GetAllData().OrderBy(m => m.Title))
+            {
+                <tr>
+                    <!--Display title of each entry in the products.json file-->
+                    <td>
+                        @product.Title
+                    </td>
+                    <!--Display link to each entry in the products.json file -->
+                    <td>
+                        <a href="./Product/Read/@product.Id" class="btn btn-success">Read More</a>
+                    </td>
+                    <!--Display link to each entry in the products.json file -->
+                    <td>
+                        <a href="./Product/Update/@product.Id" class="btn btn-warning">Update</a>
+                    </td>
+                    <!--Display link to each entry in the products.json file -->
+                    <td>
+                        <a href="./Product/Delete/@product.Id" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

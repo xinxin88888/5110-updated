@@ -1,0 +1,77 @@
+﻿@page 
+@using ContosoCrafts.WebSite.Services
+@using ContosoCrafts.WebSite.Models
+@inject JsonFileProductService ProductService
+@model ContosoCrafts.WebSite.Pages.Product.CreateModel
+
+@{
+    ViewData["Title"] = "Create page";
+}
+
+<h1>Create</h1>
+
+<div class="container">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @Html.HiddenFor(x => x.Product.Id)
+
+        <div class="form-group">
+            <label asp-for="Product.Title" class="text-label"></label>
+            <input asp-for="Product.Title" class="form-control" />
+            <span asp-validation-for="Product.Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.Description" class="text-label"></label>
+            <input asp-for="Product.Description" class="form-control" />
+            <span asp-validation-for="Product.Description" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.Quantity" class="text-label"></label>
+            <input asp-for="Product.Quantity" class="form-control" />
+            <span asp-validation-for="Product.Quantity" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.Price" class="text-label"></label>
+            <input asp-for="Product.Price" class="form-control" />
+            <span asp-validation-for="Product.Price" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.Url" class="text-label"></label>
+            <input asp-for="Product.Url" class="form-control" />
+            <span asp-validation-for="Product.Url" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.Image" class="text-label"></label>
+            <input asp-for="Product.Image" class="form-control" />
+            <span asp-validation-for="Product.Image" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.ProductType" class="text-label"></label>
+            <select class="form-control"
+                    asp-for="Product.ProductType"
+                    asp-items="Html.GetEnumSelectList<ProductTypeEnum>()">
+                <option selected="selected" value="">Please Select</option>
+            </select>
+            <span asp-validation-for="Product.ProductType" class="text-danger"></span>
+        </div>
+
+        <br />
+        <hr />
+        <br />
+
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </form>
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

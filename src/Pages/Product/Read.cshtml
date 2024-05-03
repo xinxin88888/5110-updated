@@ -1,0 +1,68 @@
+﻿@page "{id}"
+@using ContosoCrafts.WebSite.Services
+@inject JsonFileProductService ProductService
+@model ContosoCrafts.WebSite.Pages.Product.ReadModel
+
+@{
+    ViewData["Title"] = "Read page";
+}
+
+<h1>
+<label class="text-label">Read</label>
+</h1>
+<div class="container">
+
+    <img class="card-img1" src='@Model.Product.Image' alt='Image for @Model.Product.Title'>
+    <p></p>
+    <p></p>
+
+    <div class="form-group">
+        <label class="text-label">Title</label>
+        <input asp-for="Product.Title" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label class="text-label">Description</label>
+        <input asp-for="Product.Description" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label class="text-label">Quantity</label>
+        <input asp-for="Product.Quantity" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label class="text-label">Price</label>
+        <input asp-for="Product.Price" class="form-control" />
+    </div>
+
+</div>
+
+@{
+    // If there are Comments, show them.
+    if (Model.Product.CommentList.Count > 0)
+    {
+        <br />
+        <br />
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var comment in Model.Product.CommentList)
+                {
+                    <tr>
+                        <td>@comment.Comment</td>
+                        <td><a asp-page="DeleteComment" asp-route-CommentId="@comment.Id" asp-route-ProductId="@Model.Product.Id">Delete</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+
+<br />
+<br />
