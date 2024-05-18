@@ -294,7 +294,7 @@ body {
 
 h1 {
     font-family: 'Nunito', sans-serif;
-    color:blue;
+    color:black;
 }
 
 ul {
@@ -312,9 +312,9 @@ ul {
 /*Backgrounds*/
 .bg-navbar {
     background: -webkit-linear-gradient(110deg, #e9a8a6 60%, # 60%);
-    background: -o-linear-gradient(110deg, #FFA500 60%, #FFA500 60%);
-    background: -moz-linear-gradient(110deg, #FFA500 60%, #FFA500 60%);
-    background: linear-gradient(110deg, #FFA500 75%, #000000 75%);
+    background: -o-linear-gradient(110deg, #95c0c7 60%, #FFA500 60%);
+    background: -moz-linear-gradient(110deg, #95c0c7 60%, #FFA500 60%);
+    background: linear-gradient(110deg, #95c0c7 75%, #918f8a 75%);
 }
 
 .bg-footer {
@@ -338,7 +338,8 @@ ul {
 }
 
 .text-label {
-    color: white;
+    color: black;
+    background-color: white;
     font-weight: bold;
 }
 
