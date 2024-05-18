@@ -1,0 +1,349 @@
+﻿.checked {
+    color: orange;
+}
+
+.fa-star {
+    cursor: pointer;
+}
+
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+/* This container is needed to position the front and back side */
+.flip-card {
+    background-color: transparent;
+    width: 348px;
+    height: 368px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    transform: rotateY(180deg);
+}
+
+.filterLabel {
+    color: white;
+    text-align: center;
+}
+
+.about-us-title {
+    color: white;
+    object-fit: cover;
+}
+
+.items-Explore {
+    font-size: 16px;
+    color: #FFA500;
+    background-color: black;
+}
+
+.explore-img {
+    width: 500px;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.card-columns .card:hover .card-img {
+    opacity: 1;
+    -webkit-transform-style: preserve-3d;
+}
+
+.card-columns .card-body {
+    height: 100px;
+    font-family: 'Nunito', sans-serif;
+    background: #fbfafd;
+}
+
+.card-columns .card-img {
+    height: 330px;
+    vertical-align: bottom;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    opacity: .8;
+}
+
+.carousel-text-body {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.button-contrast-background {
+    background-color: grey;
+    border-radius: calc(0.25rem - 1px);
+}
+
+.carousel-control-prev-icon {
+    display: block;
+    margin: 0.25rem;
+}
+
+.carousel-control-next-icon {
+    display: block;
+    margin: 0.25rem;
+}
+
+.modal .card-img {
+    height: 500px;
+    vertical-align: bottom;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card-visible {
+    height: 500px;
+    vertical-align: bottom;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto; /* Resize the background image to cover the entire container */
+    border-style: solid;
+    border-color: white;
+    border-radius: 35px;
+}
+
+.card-columns .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(37,33,82,.12), 0 4px 8px rgba(37,33,82,.06);
+}
+
+.card-footer {
+    background: #fbfafd;
+}
+
+/* Row order card formatting */
+.card-deck .card {
+    margin-bottom: 1em;
+}
+
+/* This is the class used for card images on the home page */
+.card-img-top {
+    height: 23em;
+    vertical-align: bottom;
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    object-fit: cover;
+}
+
+a .navbar-brand {
+    white-space: normal;
+    font-family: 'Open Sans';
+    font-size: xx-large;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* This is the class used for contents in read page.*/
+.read-content {
+    margin: auto;
+    width: 50%;
+    border: 3px;
+    padding: 10px;
+    text-align: center;
+}
+
+    .read-content img {
+        height: 500px;
+        width: 500px;
+    }
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.txt-color {
+    color: #FFFF
+}
+
+/*Glow effect for yellow buttons*/
+.btn-yellow:hover {
+    background: #FFFF00;
+    box-shadow: 0 0 5px #FFFF00, 0 0 25px #FFFF00, 0 0 50px #FFFF00, 0 0 200px #FFFF00;
+}
+
+/*Glow effect for green buttons*/
+.btn-green:hover {
+    background: #1aff1a;
+    box-shadow: 0 0 5px #1aff1a, 0 0 25px #1aff1a, 0 0 50px #1aff1a, 0 0 200px #1aff1a;
+}
+
+/*Glow effect for red buttons*/
+.btn-red:hover {
+    background: #ff3300;
+    box-shadow: 0 0 5px #ff3300, 0 0 25px #ff3300, 0 0 50px #ff3300, 0 0 200px #ff3300;
+}
+
+/*Glow effect for blue buttons*/
+.btn-blue:hover {
+    background: #279bbe;
+    box-shadow: 0 0 5px #279bbe, 0 0 25px #279bbe, 0 0 50px #279bbe, 0 0 200px #279bbe;
+}
+
+/*Glow effect for Grey buttons*/
+.btn-grey:hover {
+    background: #959c9d;
+    box-shadow: 0 0 5px #959c9d, 0 0 25px #959c9d, 0 0 50px #959c9d, 0 0 200px #959c9d;
+}
+
+/*Glow effect for black buttons*/
+.btn-black:hover {
+    background: #61686b;
+    box-shadow: 0 0 5px #61686b, 0 0 25px #61686b, 0 0 50px #61686b, 0 0 200px #61686b;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #252152;
+    border-color: #252152;
+}
+
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #e9a8a6;
+        border-color: #e9a8a6;
+    }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: url(../halloween.jpg);
+
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    color:black;
+}
+
+ul {
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    font-family: 'Nunito', sans-serif;
+}
+/*Backgrounds*/
+.bg-navbar {
+    background: -webkit-linear-gradient(110deg, #e9a8a6 60%, # 60%);
+    background: -o-linear-gradient(110deg, #95c0c7 60%, #FFA500 60%);
+    background: -moz-linear-gradient(110deg, #95c0c7 60%, #FFA500 60%);
+    background: linear-gradient(110deg, #95c0c7 75%, #918f8a 75%);
+}
+
+.bg-footer {
+    background: -webkit-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
+    background: -o-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
+    background: -moz-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
+    background: linear-gradient(110deg, #E1E9E8 89%, #000000 89%);
+}
+
+.create-button {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.title-error {
+    text-align: center
+}
+
+.halloween-card {
+    padding-bottom: 30px;
+}
+
+.text-label {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+.card-img1 {
+    height: 330px;
+    width: 330px;
+}
