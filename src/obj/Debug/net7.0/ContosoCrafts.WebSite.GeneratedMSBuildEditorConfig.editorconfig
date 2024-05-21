@@ -1,0 +1,75 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ContosoCrafts.WebSite
+build_property.RootNamespace = ContosoCrafts.WebSite
+build_property.ProjectDir = /Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/Components/ProductIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Qcm9kdWN0SW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/Components/ProductList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Qcm9kdWN0TGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/Pages/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/Pages/Product/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdC9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/Pages/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/Pages/Product/Read.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdC9SZWFkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/Pages/Product/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdC9VcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
