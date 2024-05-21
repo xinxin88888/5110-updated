@@ -3,9 +3,6 @@
 @using Microsoft.AspNetCore.Components.Web
 @inject JsonFileProductService ProductService
 
-
-
-
 <div>
     <div class="row">
         <div class="col">
@@ -50,9 +47,9 @@
                                     data-toggle="modal" data-target="#productModal" class="btn btn-yellow btn-warning">
                                     More Info
                                 </button>
-                                <button @onclick="(e => SelectProduct(product.Id))" id="moreInfo_@product.Id"
-                                    data-toggle="modal" data-target="#productModal" class="btn btn-yellow btn-warning">
-                                    Test
+                                <button @onclick="(e => ShowPurchaseModal(product.Id))" id="purchase_@product.Id"
+                                    data-toggle="modal" data-target="#purchaseModal" class="btn btn-yellow btn-warning">
+                                    Purchase 
                                 </button>
                             </small>
                         </div>
@@ -63,105 +60,70 @@
     }
 </div>
 
-
 @if (selectedProduct == null)
 {
     selectedProduct = ProductService.GetAllData().First();
 }
 
-    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="productTitle">@selectedProduct.Title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="card">
-                        <div class="card-img" style="background-image: url('@selectedProduct.Image');">
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">@selectedProduct.Description</p>
-                        </div>
+<!-- Product Details Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productTitle">@selectedProduct.Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-img" style="background-image: url('@selectedProduct.Image');"></div>
+                    <div class="card-body">
+                        <p class="card-text">@selectedProduct.Description</p>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col">
-                                @{
-                                    var voteString = @voteCount + " " + @voteLabel;
+            </div>
+            <div class="modal-footer">
+                <!-- Rating and comments section -->
+            </div>
+        </div>
+    </div>
+</div>
 
-                                    if (voteCount == 0)
-                                    {
-                                        voteString = "Be the first to vote!";
-                                    }
-
-                                    <span>@voteString</span>
-
-                                    for (int i = 1; i < 6; i++)
-                                    {
-                                        var currentStar = i;
-                                        var checkedText = "";
-
-                                        if (i <= currentRating)
-                                        {
-                                            checkedText = "checked";
-                                        }
-
-                                        <span class="fa fa-star @checkedText" @onclick="(e => SubmitRating(currentStar))"></span>
-                                    }
-                                }
+<!-- Purchase Modal -->
+<div class="modal fade" id="purchaseModal" tabindex="-1" role="dialog" aria-labelledby="purchaseTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="purchaseTitle">@selectedProduct.Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <img class="card-img-top" src="@selectedProduct.Image" style="width:100%; height:auto;">
+                    <div class="card-body">
+                        <p>Quantity Available: @selectedProduct.Quantity</p>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary" type="button" @onclick="DecreaseQuantity">-</button>
                             </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                @{
-                                    // First show all the existing comments
-                                    foreach (var comment in selectedProduct.CommentList)
-                                    {
-                                        <div class="row">
-                                            <div class="col">
-                                                @comment.Comment
-                                            </div>
-                                        </div>
-                                    }
-
-                                    // If this is a new comment, then add the Input boxes for it, else show the Add Comment Button
-                                    if (NewComment)
-                                    {
-                                        <div class="row">
-                                            <div class="col">
-                                                <input type="text" @onchange="(e) => UpdateCommentText(e.Value.ToString())" value="@NewCommentText" />
-                                                <button @onclick="(e => AddComment())" class="btn btn-success" data-toggle="modal">Save Comment</button>
-                                            </div>
-                                        </div>
-                                    }
-
-                                    // If this is not a new comment, then show the buttons for Adding comment and Close
-                                    if (NewComment == false)
-                                    {
-                                        <div class="row">
-                                            <div class="col">
-                                                <button @onclick="(e => ShowNewCommentInput())" id="AddComment" class="btn btn-primary">Add Comment</button>
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    }
-                                }
+                            <input type="text" class="form-control" value="@SelectedProductQuantity" readonly />
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" @onclick="IncreaseQuantity">+</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Add to Cart</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</div>
 
 @code 
 {
@@ -169,12 +131,35 @@
     string selectedProductId;
     string FilterDataString = "";
     bool FilterData = false;
+    int SelectedProductQuantity = 1;
 
     void SelectProduct(string productId)
     {
       selectedProductId = productId;
       selectedProduct = ProductService.GetAllData().First(x => x.Id == productId);
       GetCurrentRating();
+    }
+
+    void ShowPurchaseModal(string productId)
+    {
+        SelectProduct(productId);
+        SelectedProductQuantity = 1; // Initialize the quantity
+    }
+
+    void IncreaseQuantity()
+    {
+        if (SelectedProductQuantity < selectedProduct.Quantity)
+        {
+            SelectedProductQuantity++;
+        }
+    }
+
+    void DecreaseQuantity()
+    {
+        if (SelectedProductQuantity > 1)
+        {
+            SelectedProductQuantity--;
+        }
     }
 
     int currentRating = 0;
@@ -198,7 +183,7 @@
       System.Console.WriteLine($"Current rating for {selectedProduct.Id}: {currentRating}");
     }
 
-        // New Comment Flag to show the input box or not
+    // New Comment Flag to show the input box or not
     bool NewComment = false;
 
     // Next Comment Text is what the comment text is
@@ -233,7 +218,6 @@
         // Refactor to be a call to the middle tier
         // ProductService.AddCommentToProduct(selectedProduct, comment);
 
-
         // Add it to the Comment List
         selectedProduct.CommentList.Add(new CommentModel() { Comment = NewCommentText });
 
@@ -243,8 +227,6 @@
         // Set the NewComment flag to false to hide the input box
         NewComment = false;
     }
-
-
 
     void UpdateFilterText(string text)
     {
@@ -262,7 +244,6 @@
         // If the Filter is enabled, set the filter flag
         FilterData = false;
     }
-
 
     void SubmitRating(int rating)
     {

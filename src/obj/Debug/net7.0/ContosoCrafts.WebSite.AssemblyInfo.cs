@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ContosoCrafts.WebSite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83624443584a923636be40bc0b2a71a62d40b894")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c308b010f0948b90bd674dc3c1b4c34be7a4b8d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ContosoCrafts.WebSite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ContosoCrafts.WebSite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
