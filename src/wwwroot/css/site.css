@@ -145,6 +145,16 @@ for details on configuring this project to bundle and minify static web assets. 
     box-shadow: 0 10px 20px rgba(37,33,82,.12), 0 4px 8px rgba(37,33,82,.06);
 }
 
+.card-footer .text-muted {
+     display: flex;
+    gap: 110px;/* Adjust the gap between buttons as needed */
+}
+
+.card-footer .btn {
+    display: inline-block;
+}
+
+
 .card-footer {
     background: #fbfafd;
 }
