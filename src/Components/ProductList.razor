@@ -50,6 +50,10 @@
                                     data-toggle="modal" data-target="#productModal" class="btn btn-yellow btn-warning">
                                     More Info
                                 </button>
+                                <button @onclick="(e => SelectProduct(product.Id))" id="moreInfo_@product.Id"
+                                    data-toggle="modal" data-target="#productModal" class="btn btn-yellow btn-warning">
+                                    Test
+                                </button>
                             </small>
                         </div>
                     </div>
