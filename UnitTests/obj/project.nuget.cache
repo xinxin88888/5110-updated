@@ -1,21 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "e7F9EQimfwEbS20sJoP9pSiQgeDW1eOx+cvLrA6KWYFg4ivhVuwH592zea6AaVbgS4FnVlE8OirdslyaqJu/ng==",
-  "success": true,
+  "dgSpecHash": "T17waCg2UMfPI5rUaCV4c3wppOUErPH5CQeFB8NjpctJ/Au7riyRnzbBFMa69bwTOvt1kt9Cg1uh+U//oHvNzg==",
+  "success": false,
   "projectFilePath": "/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/UnitTests/UnitTests.csproj",
   "expectedPackageFiles": [
     "/Users/michaeltorkaman/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/microsoft.aspnetcore.mvc.razor.extensions/6.0.0/microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/microsoft.aspnetcore.mvc.razor.runtimecompilation/7.0.11/microsoft.aspnetcore.mvc.razor.runtimecompilation.7.0.11.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.0/microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/microsoft.codeanalysis.analyzers/3.3.2/microsoft.codeanalysis.analyzers.3.3.2.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/microsoft.codeanalysis.common/4.0.0/microsoft.codeanalysis.common.4.0.0.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/microsoft.codeanalysis.csharp/4.0.0/microsoft.codeanalysis.csharp.4.0.0.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/microsoft.codeanalysis.razor/6.0.0/microsoft.codeanalysis.razor.6.0.0.nupkg.sha512",
     "/Users/michaeltorkaman/.nuget/packages/microsoft.codecoverage/17.7.2/microsoft.codecoverage.17.7.2.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/microsoft.extensions.dependencymodel/7.0.0/microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
     "/Users/michaeltorkaman/.nuget/packages/microsoft.net.test.sdk/17.7.2/microsoft.net.test.sdk.17.7.2.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/microsoft.netcore.platforms/2.1.2/microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "/Users/michaeltorkaman/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/michaeltorkaman/.nuget/packages/microsoft.testplatform.objectmodel/17.7.2/microsoft.testplatform.objectmodel.17.7.2.nupkg.sha512",
     "/Users/michaeltorkaman/.nuget/packages/microsoft.testplatform.testhost/17.7.2/microsoft.testplatform.testhost.17.7.2.nupkg.sha512",
     "/Users/michaeltorkaman/.nuget/packages/moq/4.20.69/moq.4.20.69.nupkg.sha512",
@@ -24,15 +16,18 @@
     "/Users/michaeltorkaman/.nuget/packages/nuget.frameworks/6.5.0/nuget.frameworks.6.5.0.nupkg.sha512",
     "/Users/michaeltorkaman/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
     "/Users/michaeltorkaman/.nuget/packages/nunit3testadapter/4.5.0/nunit3testadapter.4.5.0.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/system.collections.immutable/5.0.0/system.collections.immutable.5.0.0.nupkg.sha512",
     "/Users/michaeltorkaman/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/system.reflection.metadata/5.0.0/system.reflection.metadata.5.0.0.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/system.text.encoding.codepages/4.5.1/system.text.encoding.codepages.4.5.1.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
-    "/Users/michaeltorkaman/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "/Users/michaeltorkaman/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project ContosoCrafts.WebSite is not compatible with net7.0 (.NETCoreApp,Version=v7.0). Project ContosoCrafts.WebSite supports: net8.0 (.NETCoreApp,Version=v8.0)",
+      "libraryId": "ContosoCrafts.WebSite",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }
