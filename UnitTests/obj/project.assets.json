@@ -1050,19 +1050,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/michaeltorkaman/.nuget/packages/": {}
+    "/Users/kautilya/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/UnitTests/UnitTests.csproj",
+      "projectUniqueName": "/Users/kautilya/Desktop/Product Dev/SWE Course ML Component/5110-updated/UnitTests/UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/UnitTests/UnitTests.csproj",
-      "packagesPath": "/Users/michaeltorkaman/.nuget/packages/",
-      "outputPath": "/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/UnitTests/obj/",
+      "projectPath": "/Users/kautilya/Desktop/Product Dev/SWE Course ML Component/5110-updated/UnitTests/UnitTests.csproj",
+      "packagesPath": "/Users/kautilya/.nuget/packages/",
+      "outputPath": "/Users/kautilya/Desktop/Product Dev/SWE Course ML Component/5110-updated/UnitTests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/michaeltorkaman/.nuget/NuGet/NuGet.Config"
+        "/Users/kautilya/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -1074,8 +1074,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/ContosoCrafts.WebSite.csproj": {
-              "projectPath": "/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/ContosoCrafts.WebSite.csproj"
+            "/Users/kautilya/Desktop/Product Dev/SWE Course ML Component/5110-updated/src/ContosoCrafts.WebSite.csproj": {
+              "projectPath": "/Users/kautilya/Desktop/Product Dev/SWE Course ML Component/5110-updated/src/ContosoCrafts.WebSite.csproj"
             }
           }
         }
@@ -1084,6 +1084,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1118,12 +1123,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/RuntimeIdentifierGraph.json"
       }
     }
   },

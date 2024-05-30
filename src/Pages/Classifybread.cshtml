@@ -1,0 +1,24 @@
+@page
+@model ContosoCrafts.WebSite.Pages.ClassifyBreadModel
+@{
+    ViewData["Title"] = "Classify Bread";
+}
+
+<h1>Classify Bread</h1>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="file">Upload Bread Image</label>
+        <input type="file" class="form-control" name="file" />
+    </div>
+    <button type="submit" class="btn btn-primary">Classify</button>
+</form>
+
+@if (Model.Prediction != null)
+{
+    <h3>Prediction: @Model.Prediction</h3>
+}
+@if (Model.Error != null)
+{
+    <h3>Error: @Model.Error</h3>
+}

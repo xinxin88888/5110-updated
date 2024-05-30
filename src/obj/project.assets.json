@@ -4599,20 +4599,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/michaeltorkaman/.nuget/packages/": {}
+    "/Users/kautilya/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/ContosoCrafts.WebSite.csproj",
+      "projectUniqueName": "/Users/kautilya/Desktop/Product Dev/SWE Course ML Component/5110-updated/src/ContosoCrafts.WebSite.csproj",
       "projectName": "ContosoCrafts.WebSite",
-      "projectPath": "/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/ContosoCrafts.WebSite.csproj",
-      "packagesPath": "/Users/michaeltorkaman/.nuget/packages/",
-      "outputPath": "/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/obj/",
+      "projectPath": "/Users/kautilya/Desktop/Product Dev/SWE Course ML Component/5110-updated/src/ContosoCrafts.WebSite.csproj",
+      "packagesPath": "/Users/kautilya/.nuget/packages/",
+      "outputPath": "/Users/kautilya/Desktop/Product Dev/SWE Course ML Component/5110-updated/src/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/michaeltorkaman/Documents/seattleu/softfund/5110-updated/src/NuGet.Config",
-        "/Users/michaeltorkaman/.nuget/NuGet/NuGet.Config"
+        "/Users/kautilya/Desktop/Product Dev/SWE Course ML Component/5110-updated/src/NuGet.Config",
+        "/Users/kautilya/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4637,6 +4637,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4685,7 +4690,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
