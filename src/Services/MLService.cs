@@ -8,8 +8,8 @@ namespace ContosoCrafts.WebSite.Controllers
 {
     public class MLService
     {
-        private readonly string _apiKey = "YOUR_API_KEY"; // Replace with your actual API key
-        private readonly string _modelEndpoint = "bread-bnnvr/3"; // Model endpoint
+        private readonly string _apiKey = "t7Lg38TFvPKqrwLOmInk"; 
+        private readonly string _modelEndpoint = "bread-bnnvr/3"; 
 
         public string InferImage(string filePath)
         {
